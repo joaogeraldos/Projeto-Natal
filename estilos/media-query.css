@@ -4,12 +4,6 @@
     src: url(../fontes/Christmas\ Hat.ttf) format('truetype');
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    
-}
-
 :root {
     --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-destaque: 'Christmas', cursive;
@@ -22,80 +16,28 @@
     --cor4: #8C3A3A;
 }
 
-body {
-    background: #8C3A3A url(../imagens/background.jpg) right center no-repeat fixed;
-    background-size: cover;
-    height: 100vh;
-}
+@media screen and (min-width: 768px){
+    menu {
+        display: flex;
+    }
 
-@media screen and (orientation: landscape){
+    header img {
+        width: 30px;
+        margin-left: 5px;
+    }
+    
     header {
-        background-color: var(--cor4);
-        padding: 10px;
-        display: flex;
-        position: relative;
         justify-content: space-between;
-        align-items: center;
-    }
-    header > h2 {
-        margin: 0px 78vw 0px 0px;
-        color: rgb(240, 235, 235);
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.993);
-        font-family: var(--fonte-destaque);
-    }
-    header > h1 {
-        display: inline;
-        position: absolute;
-        left: 45vw;
-        color: white;
-        text-shadow: 2px 2px 5px black;
-    }
-    #burguer {
-        display: none;
-    }
-    header > img {
-        right: 96.5vw;
-        width: 40px;
-        height: 40px;
-    }
-    header menu > ul {
-        display: flex;
-        gap: 5px;
-        list-style-type: none;
-
-    }
-    menu > ul > li > a{
-        color: white;
-        text-decoration: none;
-        /* background-color: rgb(87,87,87); */
-        padding: 5px 10px;
-        border-radius: 8px;
-        text-shadow: 1px 1px 2px black;
-    }
-    menu ul > li > a:hover {
-        background-color: rgb(134, 134, 134);
-    }
-    main {
-        background-color: rgba(255, 255, 255, 0.842);
-        margin: auto;
-        width: 75vw;
         padding: 10px;
-        text-align: justify;
     }
 
-    main > img {
-        width: 100%;
-        border: 1px solid rgb(255, 255, 255);
-    }
-    main > article > h1 {
+    header h1 {
+        position: relative;
+        left: 15%;
         font-family: var(--fonte-titulos);
-        color: rgb(206, 0, 0);
-        padding: 20px 0px;
-        text-shadow: 1px 1px 0px black;
-    }
-    main > article > p {
-        color: rgb(0, 0, 0);
-        text-indent: 20px;
-        padding: 5px;
+        color: white;
+        text-shadow:  1px 1px 4px black;
+        font-size: 1.5em;
+        transform: translate(-50%);
     }
 }

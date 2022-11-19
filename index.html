@@ -6,30 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="estilos/style.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
-    <title>Menu Flex</title>
+    <title>Natal</title>
 </head>
 <body>
     <header>
-        <img src="imagens/iconenatal.png" alt="Brasil"> <h2 id="natal">Feliz natal</h2>
-        <h1>Teste Site</h1>
-        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <menu id="menuHeader">
-            <ul>
-                <!-- <li><a href="#">Esportes</a></li>
-                <li><a href="#">Politica</a></li> -->
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </menu>
+        <img src="imagens/Papai-Noel 2.png" alt="">
+       <h1>Natal</h1>
+       <menu>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+       </menu>
     </header>
     <main>
-        <img src="imagens/papainoel.jpg" alt="">
-        <article>
-                <h1>O que é o Natal</h1>
-                <p> O Natal é uma data comemorativa que simboliza o nascimento de Jesus Cristo. Esta celebração acontece há mais de 1.600 anos no dia 25 de dezembro.</p>
-                <p> Natal se refere a nascimento ou ao local onde alguma pessoa nasceu. Por exemplo, a expressão "cidade natal" indica a cidade onde um determinado indivíduo nasceu. A palavra "natal" significa "do nascimento".</p>
+        <section class="conteudo1">
+            <h1>O que é o Natal</h1>
+            <p> O Natal é uma data comemorativa que simboliza o nascimento de Jesus Cristo. Esta celebração acontece há mais de 1.600 anos no dia 25 de dezembro.</p>
+            <p> Natal se refere a nascimento ou ao local onde alguma pessoa nasceu. Por exemplo, a expressão "cidade natal" indica a cidade onde um determinado indivíduo nasceu. A palavra "natal" significa "do nascimento".</p>
 
+            <img src="imagens/papainoel.jpg" alt="">
+        </section>
+        <article>
+            <h1>Feliz</h1>
+            <h1>Natal</h1>
+        </article>
+        <section class="conteudo2">
             <h1>Origem do Natal</h1>
 
             <p>O Natal é a data em que os cristãos comemoram o nascimento de Jesus Cristo. Durante muitos anos após seu nascimento, essa comemoração era feita em dias diferentes, pois não se sabia a data exata de seu nascimento.</p>
@@ -45,16 +51,17 @@
             <p>Além desses rituais, outra celebração que pode ter influenciado a definição da data do Natal é o Yule ou Jól, uma comemoração realizada pelos nórdicos da Era Viking, também em celebração ao solstício de inverno.</p>
 
             <p>Acredita-se que a escolha do dia 25, portanto, era uma forma de conseguir mais adeptos ao cristianismo, utilizando-se de algumas referências dos rituais pagãos.</p>
-        </article>
+        </section>
+        
     </main>
     <script>
-          function clickMenu() {
-            if (menuHeader.style.display == 'block'){
-                menuHeader.style.display = 'none'
-            } else {
-                menuHeader.style.display = 'block'
-            }
-        }
+        //   function clickMenu() {
+        //     if (menuHeader.style.display == 'block'){
+        //         menuHeader.style.display = 'none'
+        //     } else {
+        //         menuHeader.style.display = 'block'
+        //     }
+        // }
 
         function mudouTamanho() {
             if (window.innerWidth >= 768) {
