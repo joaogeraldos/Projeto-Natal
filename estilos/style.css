@@ -34,6 +34,7 @@ header {
     align-items: center;
     padding: 10px;
     background-color: var(--cor1);
+    justify-content: space-between;
 }
 
 header img {
@@ -43,7 +44,7 @@ header img {
 
 header h1 {
     position: relative;
-    left: 40%;
+    left: 10%;
     font-family: var(--fonte-titulos);
     color: white;
     text-shadow:  1px 1px 4px black;
@@ -51,15 +52,11 @@ header h1 {
     transform: translate(-50%, -20%);
 }
 
-button {
-    position: relative;
-    left: 52%;
-}
-
 menu ul {
     display: flex;
     list-style: none;
-    margin-right: 10px;
+   position: relative;
+   left: 32%;
 } 
 
 menu ul li a {
@@ -123,7 +120,7 @@ article {
     text-align: center;
 }
 
-div {
+.animacao {
     display: inline;
     position: relative;
     left: -15%;
@@ -131,7 +128,7 @@ div {
     margin: 10px 0;
     padding: 10px 0;
 }
-div h1 {  
+.animacao h1 {  
     color: var(--cor2);
     animation: animate 4s linear infinite;  
 }
@@ -188,6 +185,7 @@ article img {
 .ultimo {
     margin-bottom: 10px;
     padding-bottom: 10px;
+    
 }
 
 footer {
@@ -196,10 +194,29 @@ footer {
     text-align: center;
     font-size: 0.70em;
     padding: 5px;
-    margin-top: 10px;
+   
 }
 
 .destaque {
     background-color: black !important;
     color: white !important;
+}
+#idarck {
+    display: none;
+}
+.darck {
+    background-color: var(--cor0);
+}
+
+#idarck:checked ~ .darck{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    
+}
+
+.icone img{
+    align-self: center;
+    justify-content:end;
+    width: 20px;
+
 }

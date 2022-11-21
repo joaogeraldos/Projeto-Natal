@@ -11,74 +11,61 @@
     <title>Natal</title>
 </head>
 <body class="teste">
-    <header>
-        <img src="imagens/Papai-Noel 2.png" alt="">
-       <h1>Natal</h1>
-       <button> Clique</button>
-       <menu>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Sign Up</a></li>
-        </ul>
-       </menu>
-    </header>
-    <main class="teste">
-        <section class="conteudo1">
-            <h1>O que é o Natal</h1>
-            <p> O Natal é uma data comemorativa que simboliza o nascimento de Jesus Cristo. Esta celebração acontece há mais de 1.600 anos no dia 25 de dezembro.</p>
-            <p> Natal se refere a nascimento ou ao local onde alguma pessoa nasceu. Por exemplo, a expressão "cidade natal" indica a cidade onde um determinado indivíduo nasceu. A palavra "natal" significa "do nascimento".</p>
-
-            <img src="imagens/papainoel.jpg" alt="">
-        </section>
-        <article>
-            
-            <img src="imagens/Gifs animados Papai Noel akigifs 1.gif" alt="">
-        </article>
-        <section class="conteudo2">
-            <h1>Origem do Natal</h1>
-
-            <p>O Natal é a data em que os cristãos comemoram o nascimento de Jesus Cristo. Durante muitos anos após seu nascimento, essa comemoração era feita em dias diferentes, pois não se sabia a data exata de seu nascimento.</p>
-
-            <p>Foi somente no século IV que se estabeleceu a comemoração do natal no dia 25 de dezembro, pelo Papa Julius.</p>
-
-            <img src="imagens/arvoreNatal.jpg" alt="">
-            
-            <p>Além da inexistência de documentos históricos que confirmem a data de nascimento de Cristo, uma das explicações para a escolha do dia 25 eram as festas pagãs que costumavam ser realizadas nesse dia.</p>
-
-
-            <p>Essa era a data em que os romanos comemoravam o solstício de inverno. A celebração era uma homenagem ao Deus Sol (natalis invicti solis) e era o momento em que os romanos pediam por fartura.</p>
-
-            <p>Anos mais tarde, o Deus Sol foi substituído por Mitra, um Deus da mitologia grega.</p>
-
-            <img src="imagens/top.jpg" alt="">
-
-            <p>Além desses rituais, outra celebração que pode ter influenciado a definição da data do Natal é o Yule ou Jól, uma comemoração realizada pelos nórdicos da Era Viking, também em celebração ao solstício de inverno.</p>
-
-            <p id="ultimo">Acredita-se que a escolha do dia 25, portanto, era uma forma de conseguir mais adeptos ao cristianismo, utilizando-se de algumas referências dos rituais pagãos.</p>
-        </section>
+    <input type="checkbox" name="dark" id="idarck">
+    
+    <div class="darck">
+        <header>
+            <img src="imagens/Papai-Noel 2.png" alt="">
+           <h1>Natal</h1>
+           <menu>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+           </menu>
+           <label for="idarck" class="icone"><img src="imagens/brightness-and-contrast.png" alt=""></label>
+        </header>
+        <main class="teste">
+            <section class="conteudo1">
+                <h1>O que é o Natal</h1>
+                <p> O Natal é uma data comemorativa que simboliza o nascimento de Jesus Cristo. Esta celebração acontece há mais de 1.600 anos no dia 25 de dezembro.</p>
+                <p> Natal se refere a nascimento ou ao local onde alguma pessoa nasceu. Por exemplo, a expressão "cidade natal" indica a cidade onde um determinado indivíduo nasceu. A palavra "natal" significa "do nascimento".</p>
+                <img src="imagens/papainoel.jpg" alt="">
+            </section>
+            <article>
         
-    </main>
-    <div>
-        <h1>Feliz</h1>
-        <h1>Natal</h1>
+                <img src="imagens/Gifs animados Papai Noel akigifs 1.gif" alt="">
+            </article>
+            <section class="conteudo2">
+                <h1>Origem do Natal</h1>
+                <p>O Natal é a data em que os cristãos comemoram o nascimento de Jesus Cristo. Durante muitos anos após seu nascimento, essa comemoração era feita em dias diferentes, pois não se sabia a data exata de seu nascimento.</p>
+                <p>Foi somente no século IV que se estabeleceu a comemoração do natal no dia 25 de dezembro, pelo Papa Julius.</p>
+                <img src="imagens/arvoreNatal.jpg" alt="">
+        
+                <p>Além da inexistência de documentos históricos que confirmem a data de nascimento de Cristo, uma das explicações para a escolha do dia 25 eram as festas pagãs que costumavam ser realizadas nesse dia.</p>
+                <p>Essa era a data em que os romanos comemoravam o solstício de inverno. A celebração era uma homenagem ao Deus Sol (natalis invicti solis) e era o momento em que os romanos pediam por fartura.</p>
+                <p>Anos mais tarde, o Deus Sol foi substituído por Mitra, um Deus da mitologia grega.</p>
+                <img src="imagens/top.jpg" alt="">
+                <p>Além desses rituais, outra celebração que pode ter influenciado a definição da data do Natal é o Yule ou Jól, uma comemoração realizada pelos nórdicos da Era Viking, também em celebração ao solstício de inverno.</p>
+                <p id="ultimo">Acredita-se que a escolha do dia 25, portanto, era uma forma de conseguir mais adeptos ao cristianismo, utilizando-se de algumas referências dos rituais pagãos.</p>
+            </section>
+        
+        </main>
+        <div class="animacao">
+            <h1>Feliz</h1>
+            <h1>Natal</h1>
+        </div>
     </div>
     <footer>
         <p>
             Desenvolvido por João Geraldo!
         </p>
     </footer>
-    <script src="java/color.js"></script>
+    
     <script>
-        //   function clickMenu() {
-        //     if (menuHeader.style.display == 'block'){
-        //         menuHeader.style.display = 'none'
-        //     } else {
-        //         menuHeader.style.display = 'block'
-        //     }
-        // }
-            
+    
         function mudouTamanho() {
             if (window.innerWidth >= 768) {
                 menuHeader.style.display = 'block'
